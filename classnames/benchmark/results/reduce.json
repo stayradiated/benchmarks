@@ -1,0 +1,33 @@
+{
+  "name": "Classnames",
+  "date": "2020-10-15T04:00:57.340Z",
+  "version": "1.0.0",
+  "results": [
+    {
+      "name": "classNames(args)",
+      "ops": 7601442,
+      "margin": 0.48,
+      "percentSlower": 98.84
+    },
+    {
+      "name": "classNames(object)",
+      "ops": 6394087,
+      "margin": 0.68,
+      "percentSlower": 99.02
+    },
+    {
+      "name": "String Literal",
+      "ops": 653385411,
+      "margin": 0.55,
+      "percentSlower": 0
+    }
+  ],
+  "fastest": {
+    "name": "String Literal",
+    "index": 2
+  },
+  "slowest": {
+    "name": "classNames(object)",
+    "index": 1
+  }
+}

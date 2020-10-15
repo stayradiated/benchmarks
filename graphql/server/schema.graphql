@@ -1,0 +1,42 @@
+type Query {
+  viewer: Viewer
+}
+
+type Viewer {
+  id: ID!
+  allContacts(first: Int, last: Int) : ContactConnection
+}
+
+type PageInfo {
+  startCursor: String
+  endCursor: String
+  hasNextPage: Boolean
+  hasPreviousPage: Boolean
+}
+
+type ContactConnection {
+  edges: [ContactEdge]
+  pageInfo: PageInfo!
+}
+
+type ContactEdge {
+  node: Contact!
+  cursor: ID!
+}
+
+type Contact {
+  id: ID!
+  name: String!
+  email: String!
+}
+
+input ContactInput {
+  id: ID!
+  name: String!
+  email: String!
+}
+
+
+type Mutation {
+  createContact(input: ContactInput!): Contact
+}

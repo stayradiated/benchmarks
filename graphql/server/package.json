@@ -1,0 +1,21 @@
+{
+  "name": "@stayradiated/benchmark-graphql-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "tidy": "pkg-tidy",
+    "build": "pkg-build",
+    "start": "node ./dist/index.js"
+  },
+  "dependencies": {
+    "fastify": "3.6.0",
+    "fastify-cors": "4.1.0",
+    "mercurius": "6.1.1",
+    "react-relay": "10.0.1"
+  },
+  "devDependencies": {
+    "@stayradiated/pkg": "4.4.0",
+    "@types/ws": "7.2.7"
+  }
+}
