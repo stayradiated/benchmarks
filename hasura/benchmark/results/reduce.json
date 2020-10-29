@@ -1,0 +1,51 @@
+{
+  "name": "GraphQL Server",
+  "date": "2020-10-29T02:45:53.345Z",
+  "version": "1.0.0",
+  "results": [
+    {
+      "name": "Hasura (Large Query)",
+      "ops": 113,
+      "margin": 5.44,
+      "percentSlower": 13.08
+    },
+    {
+      "name": "Hasura (Small Query)",
+      "ops": 130,
+      "margin": 6.58,
+      "percentSlower": 0
+    },
+    {
+      "name": "Hasura w/ Relay (Large Query)",
+      "ops": 85,
+      "margin": 6.57,
+      "percentSlower": 34.62
+    },
+    {
+      "name": "Hasura w/ Relay (Small Query)",
+      "ops": 100,
+      "margin": 6.02,
+      "percentSlower": 23.08
+    },
+    {
+      "name": "Ruby (Small Query)",
+      "ops": 18,
+      "margin": 3.59,
+      "percentSlower": 86.15
+    },
+    {
+      "name": "Ruby (Large Query)",
+      "ops": 7,
+      "margin": 2.56,
+      "percentSlower": 94.62
+    }
+  ],
+  "fastest": {
+    "name": "Hasura (Small Query)",
+    "index": 1
+  },
+  "slowest": {
+    "name": "Ruby (Large Query)",
+    "index": 5
+  }
+}
